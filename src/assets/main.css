@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #071d3a;
+  --color-navy-900: #0b2b52;
+  --color-navy-800: #103c6a;
+  --color-blue-600: #1769d2;
+  --color-blue-100: #eaf2ff;
+  --color-teal-500: #20b7b0;
+  --color-green-600: #159a62;
+  --color-amber-500: #e99a22;
+  --color-red-600: #dc4545;
+  --color-slate-900: #17243a;
+  --color-slate-600: #607086;
+  --color-slate-200: #e2e8f0;
+  --color-slate-50: #f5f8fc;
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+:root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #17243a; background: #f5f8fc; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { min-width: 360px; min-height: 100vh; margin: 0; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .58; }
+a { color: inherit; text-decoration: none; }
+::selection { color: #0b2b52; background: #dceaff; }
+
+.page-enter-active, .page-leave-active { transition: opacity .15s ease, transform .15s ease; }
+.page-enter-from, .page-leave-to { opacity: 0; transform: translateY(5px); }
+.scrollbar-thin { scrollbar-width: thin; scrollbar-color: #c8d4e3 transparent; }
+.focus-ring { outline: none; }
+.focus-ring:focus-visible { box-shadow: 0 0 0 3px #1769d244; }
+.field-input, .field-select { width: 100%; min-height: 40px; border: 1px solid #dbe3ed; border-radius: 10px; background: #fff; padding: 9px 12px; color: #17243a; font-size: 12px; outline: none; transition: border-color .15s, box-shadow .15s; }
+.field-input.field-input-icon { padding-left: 40px; }
+.field-select.field-select-icon { padding-left: 38px; }
+.field-input:focus, .field-select:focus { border-color: #1769d2; box-shadow: 0 0 0 3px #1769d21c; }
+.field-input::placeholder { color: #94a3b8; }
